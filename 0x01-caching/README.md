@@ -18,12 +18,6 @@
 `4-mru_cache.py`
 > 4. MRU (Most Recently Used) Caching
 ---
-``
-> 
----
-``
-> 
----
-``
-> 
+`100-lfu_cache.py`
+> 5. LFU Caching 
 ---
