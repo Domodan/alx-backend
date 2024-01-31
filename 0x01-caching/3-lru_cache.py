@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Moduel: LRUCache caching module
+    Module: LRUCache caching module
 """
 
 BaseCaching = __import__('base_caching').BaseCaching
@@ -28,7 +28,7 @@ class LRUCache(BaseCaching):
 
         self.cache_data[key] = item
 
-        if len(self.cache_data) + 1 > BaseCaching.MAX_ITEMS:
+        if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             lru_key = self.get_first_list(self.queue)
             if lru_key:
                 self.queue.pop(0)
