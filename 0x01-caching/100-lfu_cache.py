@@ -35,7 +35,7 @@ class LFUCache(BaseCaching):
         else:
             self.counter[key] = 1
 
-        if len(self.cache_data) + 1 > BaseCaching.MAX_ITEMS:
+        if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             lfu_key = self.get_first_list(self.queue)
             if lfu_key:
                 self.queue.pop(0)
