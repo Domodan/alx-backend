@@ -4,7 +4,7 @@
 """
 
 from flask_babel import Babel
-from flask import Flask, render_template
+from flask import Flask, render_template, request, g
 
 app = Flask(__name__, template_folder='templates')
 
@@ -34,11 +34,10 @@ def get_user() -> Union[dict, None]:
     """
         Get user from session as per variable.
     """
-    try:
-        login_as = request.args.get('login_as', None)
-        user = users[int(login_as)]
-    except Exception:
-        user = None
+    login_as = request.args.get('login_as', None)
+    if login_as:
+        return users[int(login_as)]
+    return None
 
 
 @app.before_request
