@@ -4,6 +4,7 @@
 """
 
 from flask_babel import Babel
+from typing import Union, Dict
 from flask import Flask, render_template, request, g
 
 app = Flask(__name__, template_folder='templates')
@@ -54,7 +55,7 @@ def get_index() -> str:
     """
         Render the Home/Index template page for Babel usage.
     """
-    return render_template('1-index.html')
+    return render_template('5-index.html')
 
 
 @babel.localeselector
