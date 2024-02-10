@@ -24,6 +24,6 @@
 > 6. Use user locale
 `7-app.py`
 > 7. Infer appropriate time zone
-``
-> 
+`app.py`
+> 8. Display the current time
 ---
