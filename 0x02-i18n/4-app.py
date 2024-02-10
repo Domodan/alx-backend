@@ -28,9 +28,9 @@ def get_locale() -> str:
     """
         Retrieves the locale and render the web page based on the locale
     """
-    locale_value = request.args.get('locale')
-    if locale_value in app.config['LANGUAGES']:
-        return locale_value
+    locale = request.args.get('locale')
+    if locale and locale in app.config['LANGUAGES']:
+        return locale
     return request.accept_languages.best_match(app.config["LANGUAGES"])
 
 
