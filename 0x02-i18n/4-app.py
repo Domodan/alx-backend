@@ -4,7 +4,7 @@
 """
 
 from flask_babel import Babel
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__, template_folder='templates')
 
@@ -44,7 +44,7 @@ def get_index() -> str:
     """
         Render the Home/Index template page for Babel usage.
     """
-    return render_template('1-index.html')
+    return render_template('4-index.html')
 
 
 if __name__ == '__main__':
