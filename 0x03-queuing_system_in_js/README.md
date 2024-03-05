@@ -42,6 +42,6 @@
 `9-stock.js`
 > 12. In stock?
 ---
-``
-> 
+`100-seat.js`
+> 13. Can I have a seat?
 ---
