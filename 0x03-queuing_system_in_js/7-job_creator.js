@@ -1,5 +1,5 @@
 #!/usr/bin/yarn dev
-import kue from 'kue'
+import kue from 'kue';
 
 const jobs = [
   {
