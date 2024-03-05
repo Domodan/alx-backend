@@ -1,29 +1,47 @@
 # ALX Backend
-### 0x02. i18n
+### 0x03. Queuing System in JS
 ---
-`0x02-i18n`
+`0x03-queuing_system_in_j`
 ---
-`0-app.py`
-> 0. Basic Flask app
+`dump.rdb`
+> 0. Install a redis instance
 ---
-`1-app.py`
-> 1. Basic Babel setup 
+`0-redis_client.js`
+> 1. Node Redis Client 
 ---
-`2-app.py`
-> 2. Get locale from request
+`1-redis_op.js`
+> 2. Node Redis client and basic operations
 ---
-`3-app.py`
-> 3. Parametrize templates
+`2-redis_op_async.js`
+> 3. Node Redis client and async operations
 ---
-`4-app.py`
-> 4. Force locale with URL parameter
+`4-redis_advanced_op.js`
+> 4. Node Redis client and advanced operations
 ---
-`5-app.py`
-> 5. Mock logging in
-`6-app.py`
-> 6. Use user locale
-`7-app.py`
-> 7. Infer appropriate time zone
-`app.py`
-> 8. Display the current time
+`5-subscriber.js, 5-publisher.js`
+> 5. Node Redis client publisher and subscriber
+---
+`6-job_creator.js`
+> 6. Create the Job creator
+---
+`6-job_processor.js`
+> 7. Create the Job processor
+---
+`7-job_creator.js`
+> 8. Track progress and errors with Kue: Create the Job creator
+---
+`7-job_processor.js`
+> 9. Track progress and errors with Kue: Create the Job processor
+---
+`8-job.js`
+> 10. Writing the job creation function
+---
+`8-job.test.js`
+> 11. Writing the test for job creation
+---
+`9-stock.js`
+> 12. In stock?
+---
+``
+> 
 ---
